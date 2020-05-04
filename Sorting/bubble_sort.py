@@ -9,7 +9,7 @@ class Sort:
 		# seq = [4,8,6,3,7,2]
 
 		length = len(self.seq)
-		for i in range(length):
+		for i in range(length - 1):
 			sorted = True
 			for j in range(length - 1):
 				if self.seq[j] > self.seq[j+1]:
