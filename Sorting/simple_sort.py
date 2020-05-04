@@ -3,7 +3,7 @@
 
 
 class Sort:
-	"""For sorting a list with non repeating values"""
+	"""For sorting a list with non-repeating values"""
 
 	def __init__(self, seq):
 		self.seq = seq
