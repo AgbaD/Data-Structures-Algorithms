@@ -3,9 +3,7 @@
 
 
 class Sort:
-	"""
-	For sorting a list with non repeating values
-	"""
+	"""For sorting a list with non repeating values"""
 
 	def __init__(self, seq):
 		self.seq = seq
@@ -34,6 +32,9 @@ class Sort:
 		return ''
 
 if __name__ == "__main__":
-	print("Please import and run in other script!")
+	s = input("Enter values of list seperated by commas \n")
+	seq = [int(i) for i in s.split(',')]
+	sort = Sort(seq)
+	print(sort.seq)
 
 
