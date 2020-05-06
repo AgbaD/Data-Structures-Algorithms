@@ -24,4 +24,7 @@ if __name__ == "__main__":
 		print("Invalid entry")
 		sys.exit(2)
 	sort(seq)
-	print(seq)
+	print(seq
+
+
+		
