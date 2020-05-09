@@ -12,7 +12,7 @@ def is_prime(n):
 	elif n == 2 or n == 3:
 		return True
 	else:
-		for x in range(2,sqr):
+		for x in range(2,sqr+1):
 			if n%x==0:
 				return False
 		return True
@@ -25,8 +25,9 @@ def primebn(n):
 
 if __name__ == "__main__":
 	st = datetime.utcnow()
-	print(primebn(2_000_00))
+	print(primebn(2_000_000))
 	ed = datetime.utcnow()
 	print(ed-st)
+
 
 	

@@ -2,15 +2,17 @@
 # Author:	@BlankGodd
 
 import sys
+import math
 
 def is_prime(n):
 	# Dosen't cover negative values
+	sqr = int(math.sqrt(n))
 	if n <= 1:
 		return False
 	elif n == 2 or n == 3:
 		return True
 	else:
-		for x in range(2,(n//2)+1):
+		for x in range(2,sqr+1):
 			if n%x==0:
 				return False
 		return True
