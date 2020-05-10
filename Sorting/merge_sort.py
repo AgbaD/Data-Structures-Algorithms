@@ -3,50 +3,39 @@
 
 import sys
 
-def sort(seq, count):
-	length = len(seq)
-	if length > 1:
-		mid = length // 2
-		left = seq[:mid]
-		right = seq[mid:]
-		count = sort(left, count)
-		count = sort(right, count)
-
-		# left_index, right_index, index
-		li, ri, i = 0, 0, 0
-		while li < len(left) and ri < len(right):
-			if left[li] < right[ri]:
-				seq[i] = left[li]
-				li += 1
-			else:
-				seq[i] = right[ri]
-				ri += 1
+def merge(s1, s2, s):
+	# s has to be a predefined list
+	i,j = 0,0
+	while i + j < len(s):
+		if j == len(s2) or (i < len(s1) and s1[i] < s2[j]):
+			s[i + j] = s1[i]
 			i += 1
+		else:
+			s[i + j] = s2[j]
+			j += 1
 
-		while li < len(left):
-			seq[i] = left[li]
-			li += 1
-			i += 1
-
-		while ri < len(right):
-			seq[i] = right[ri]
-			ri += 1
-			i += 1
-
-		count += 1
-
-	if len(seq) == length:
+def sort(s):
+	n = len(s)
+	if n < 2:
 		return
-	return count
+	mid = n//2
+	s1 = s[:mid]
+	s2 = s[mid:]
+
+	sort(s1)
+	sort(s2)
+
+	merge(s1, s2, s)
 
 
 if __name__ == "__main__":
 	a = input("Enter list Seperated by commas: \n")
 	try:
-		seq = [int(i) for i in a.split(",")]
+		s = [int(i) for i in a.split(",")]
 	except:
 		print("Invalid entry")
 		sys.exit(2)
-	count = 0
-	sort(seq, count)
-	print(seq)
+	sort(s)
+	print(s)
+
+	

@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# Author:	BlankGodd
+# Author:	@BlankGodd
 
 class Sort:
 	"""Bubble sort implementation"""
