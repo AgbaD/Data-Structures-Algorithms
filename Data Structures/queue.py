@@ -4,7 +4,7 @@
 class Queue:
 	"""First in first out"""
 	# default size
-	def_size = 5
+	def_size = 7
 
 	def __init__(self):
 		self._line = [None] * Queue.def_size
@@ -19,8 +19,8 @@ class Queue:
 			if x == 1:
 				del(self._line[-x])
 			else:
-				for i in range(1,x+1):
-					del(self._line[-i])
+				for i in range(x):
+					del(self._line[-1])
 			Queue.def_size = size
 		else:
 			x = size - Queue.def_size
@@ -68,55 +68,3 @@ class Queue:
 		return self._line[self._size - 1]
 
 
-q = Queue()
-
-q.display()
-print(q.length())
-q.add("Sade")
-q.add("Tola")
-q.add("Femi")
-
-print()
-q.display()
-
-print(q.length())
-print()
-
-print(q.last())
-print(q._line)
-q.add("Nike")
-q.add("Fola")
-
-q.display()
-print(q.length())
-
-print()
-q.add("Tobi")
-q.display()
-print(q._line)
-q.remove()
-q.remove()
-q.display()
-print(q._line)
-print(q.length())
-print()
-print(q.def_size)
-q.resize(2)
-q.resize(4)
-q.display()
-print(q._line)
-print(q.def_size)
-q.resize(7)
-q.display()
-print(q._line)
-print(q.length())
-
-print(q.def_size)
-
-q.resize(4)
-print(q.def_size)
-print(q.length())
-q.display()
-q.add('Simi')
-print(q.length())
-q.display()
