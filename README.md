@@ -1,17 +1,37 @@
 # PyAlgo30-1
 Writing different algorithms throughout the month of May
 
-PROJECT EULER
+## PROJECT EULER
 
-001.py | 002.py | 003.py
+## SORTING ALGHORITHMS
 
-004.py | 005.py | 006.py
+simple sort
 
-007.py | 008.py | 009.py
+merge sort
 
-010.py 
+insertion sort
 
+gnome sort
 
-SORTING
+cocktail sort
 
-simple_sort.py
+bubble sort
+
+## DATA STRUCTURES
+
+binary search tree
+
+deque
+
+linked lists
+
+queue
+
+stack
+
+## GRAPH
+## Traversal
+
+breadth first search
+
+depth first search
