@@ -59,12 +59,14 @@ class Queue:
 
 	def first(self):
 		if self._size == 0:
-			return "Empty Queue!"
+			print("Empty Queue!")
+			return
 		return self._line[0]	
 
 	def last(self):
 		if self._size == 0:
-			return "Empty Queue!"
+			print("Empty Queue!")
+			return
 		return self._line[self._size - 1]
 
 
