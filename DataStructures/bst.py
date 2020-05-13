@@ -2,6 +2,7 @@
 # Author:	@BlankGodd
 
 class Node:
+	"""Binary Search Tree"""
 
 	def __init__(self, data):
 		self.data = data
