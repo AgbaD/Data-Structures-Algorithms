@@ -1,6 +1,7 @@
 #! /usr/bin/python
 # Author:	@BlankGodd
 
+import sys
 
 class Sort:
 	"""For sorting a list with non-repeating values"""
@@ -32,8 +33,12 @@ class Sort:
 		return ''
 
 if __name__ == "__main__":
-	s = input("Enter values of list seperated by commas \n")
-	seq = [int(i) for i in s.split(',')]
+	a = input("Enter list Seperated by commas: \n")
+	try:
+		seq = [int(i) for i in a.split(",")]
+	except:
+		print("Invalid entry")
+		sys.exit(2)
 	sort = Sort(seq)
 	print(sort.seq)
 
