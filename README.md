@@ -1,7 +1,5 @@
 # PyAlgo30-1
-Writing different algorithms throughout the month of May
-
-## PROJECT EULER
+Writing different algorithms with python
 
 ## SORTING ALGHORITHMS
 
@@ -30,7 +28,7 @@ queue
 stack
 
 ## GRAPH
-## Traversal
+### Traversal
 
 breadth first search
 
