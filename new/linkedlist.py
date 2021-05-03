@@ -1,3 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python
+# Author:   @AgbaD | @agba_dr3
 
-print("give me a bottle of rum!")
+
