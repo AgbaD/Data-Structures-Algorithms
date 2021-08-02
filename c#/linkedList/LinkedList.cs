@@ -6,7 +6,7 @@ namespace linkedList
     class LinkedList
     {
         public Node root;
-        public List<string> llst = new List<string>();
+        public List<int> llst = new List<int>();
 
         // Constructor
         public LinkedList()
@@ -15,8 +15,8 @@ namespace linkedList
         }
 
 
-        // InsertStart
-        public void insertStart(char value)
+        // Insert Start
+        public void insertStart(int value)
         {
             Node a = new Node(value);
             if(root == null)
@@ -31,8 +31,134 @@ namespace linkedList
             }
         }
 
+        // Insert End
+        public void insertEnd(int value)
+        {
+            Node a = new Node(value);
+            if (root == null)
+            {
+                root = a;
+            }
+            else
+            {
+                ise(root, a);
+            }
+        }
+
+        public void ise(Node node, Node newnode)
+        {
+            if (node.next == null)
+            {
+                node.next = newnode;
+            }
+            else
+            {
+                ise(node.next, newnode);
+            }
+        }
+        
+        // Remove Start
+        public void removeStart()
+        {
+            if (root == null)
+            {
+                Console.WriteLine("Linked List is empty");
+            }
+            else if (root.next == null)
+            {
+                root = null;
+            }
+            else
+            {
+                Node n = root.next;
+                root = n;
+            }
+        }
+
+        // Remove End
+        public void removeEnd()
+        {
+            if (root == null)
+            {
+                Console.WriteLine("Linked List is empty");
+            }
+            else if (root.next == null)
+            {
+                root = null;
+            }
+            else
+            {
+                remove(root);
+            }
+        }
+
+        public void remove(Node node)
+        {
+            if (node.next.next == null)
+            {
+                node.next = null;
+            }
+            else
+            {
+                remove(node.next);
+            }
+        }
+
+        // Remove Value
+        public void removeValue(int value)
+        {
+            if(root == null)
+            {
+                Console.WriteLine("Linked List is empty!");
+            }
+            else if (root.data == value && root.next == null)
+            {
+                root = null;
+            }
+            else if (root.data != value && root.next == null)
+            {
+                Console.WriteLine("Linked List does not contain value!");
+            }
+            else if (root.data == value && root.next != null)
+            {
+                Node temp = root.next;
+                root = temp;
+            }
+            else
+            {
+                rm(root, value);
+            }
+        }
+
+        public void rm(Node node, int value)
+        {
+            if (node.next.data == value)
+            {
+                if (node.next.next == null)
+                {
+                    node.next = null;
+                }
+                else
+                {
+                    Node temp = node.next.next;
+                    node.next = temp;
+                }
+            }
+            else
+            {
+                if (node.next.next != null)
+                {
+                    rm(node.next, value);
+                }
+                else
+                {
+                    Console.WriteLine("Linked list does not contain value!");
+                }
+            }
+        }
+
         // Traverse
-        public List<string> traverse()
+        public void traverse()
         {
             if(root == null)
             {
@@ -44,19 +170,21 @@ namespace linkedList
 
                 if(root.next != null)
                 {
-                    tra(llst, root.next);
+                    tra(root.next);
                 }
             }
-
-            return llst;
+            foreach (int item in llst)
+            {
+                Console.WriteLine(item);
+            }
         }
 
-        public void tra(List<string> list, Node node)
+        public void tra(Node node)
         {
             llst.Add(node.data);
             if (node.next != null)
             {
-                tra(llst, node.next);
+                tra(node.next);
             }
         }
     }

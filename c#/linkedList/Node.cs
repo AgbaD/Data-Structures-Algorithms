@@ -4,12 +4,12 @@ namespace linkedList
 {
     class Node
     {
-        public string data;
+        public int data;
         public Node? next;
 
-        public Node(char data)
+        public Node(int adata)
         {
-            data = data;
+            data = adata;
             next = null;
         }
     }
