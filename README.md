@@ -1,5 +1,5 @@
-# PyAlgo30-1
-Writing different algorithms with python
+# DSA
+Writing different data structures & algorithms with python & c#
 
 ## SORTING ALGHORITHMS
 
