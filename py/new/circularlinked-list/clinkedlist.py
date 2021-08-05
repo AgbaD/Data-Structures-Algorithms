@@ -95,11 +95,50 @@ class CLinkedList:
                     self.tail.next = self.root
                     self.root.prev = self.tail
 
+    # remove value
+    def remove_value(self, value):
+        lst = self.traverse()
+        if not lst:
+            print("Circular linked list is empty")
+            return
+        elif value not in lst:
+            print("Value isn't present in circular linked list")
+            return
+        else:
+            ind = lst.index(value)
+            if lst[ind] == lst[-1]:
+                p = self.tail.prev
+                self.tail = p
+                self.tail.next = self.root
+                self.root.prev = self.tail
+            elif ind == 0:
+                if self.root.next:
+                    n = self.root.next
+                    if n == self.tail:
+                        self.root = n
+                        self.root.next = None
+                        self.root.prev = None
+                        self.tail = None
+                    else:
+                        self.root = n
+                        self.root.prev = self.tail
+                        self.tail.next = self.root
+                else:
+                    self.root = None
+            else:
+                cur = self.root
+                for i in range(ind):
+                    cur = cur.next
+                p = cur.prev
+                n = cur.next
+                p.next = n
+                n.prev = p
+
     # traverse
     def traverse(self):
         if not self.root:
             print("Circular linked list is empty")
-            return
+            return None
         else:
             lst = [self.root.data]
             if self.root.next:
@@ -109,6 +148,7 @@ class CLinkedList:
                     lst.append(cur.data)
                 lst.append(self.tail.data)
             print(lst)
+            return lst
 
 
 if __name__ == "__main__":
@@ -136,4 +176,5 @@ if __name__ == "__main__":
 
     lst.traverse()
 
+    lst.remove_value(15)
     lst.traverse()
