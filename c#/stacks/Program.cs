@@ -7,7 +7,7 @@ namespace stacks
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Queues");
+            Console.WriteLine("Stacks");
 
             Stack stack = new Stack(7);
 
