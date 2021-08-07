@@ -1,58 +1,55 @@
 using System;
 using System.Collections.Generic;
 
-namespace queues
+namespace stacks
 {
-    class Queue
+    class Stack
     {
-        // Queue can not contain zero value
-        public List<int> queue = new List<int>();
-        public int def_size; // default size
+        public List<int> stack = new List<int>();
+        public int def_size;
         public int cur_size = 0;
 
-        public Queue(int asize)
+        public Stack(int asize)
         {
             def_size = asize;
             for (int i = 0; i < def_size; i++)
             {
-                queue.Add(0);
+                stack.Add(0);
             }
         }
 
-        // Add to queue
-        public void enqueue(int data)
+        public void add(int value)
         {
             if (cur_size >= def_size)
             {
-                Console.WriteLine("Current Queue is full. Please dequeue or resize!");
+                Console.WriteLine("Current Stack is full. Please remove or resize!");
             }
             else
             {
-                if (data == 0)
+                if (value == 0)
                 {
-                    Console.WriteLine("Can not add zero value to queue");   
+                    Console.WriteLine("Can not add zero value to stack");   
                 }
                 else
                 {
-                    queue.Insert(cur_size, data);
+                    stack.Insert(cur_size, value);
                     cur_size++;
                 }
             }
         }
 
-        // Remove from queue
-        public int dequeue()
-        {   
-            if (queue[0] == 0)
+        public int remove()
+        {
+            if (cur_size == 0)
             {
-                Console.WriteLine("The queue is empty!");
+                Console.WriteLine("Current Stack is empty. Please add");
                 return 0;
             }
             else
             {
-                int val = queue[0];
-                queue.RemoveAt(0);
-                queue.Add(0);
+                int val = stack[cur_size - 1];
+                stack.RemoveAt(cur_size - 1);
+                stack.Add(0);
                 cur_size--;
                 return val;
             }
@@ -63,46 +60,11 @@ namespace queues
         {
             return cur_size;
         }
-        
+
         // get default size
         public int getDefSize()
         {
             return def_size;
-        }
-
-        // Resize
-        public void resize(int size)
-        {
-            if (size < cur_size)
-            {
-                Console.WriteLine("Current queue size is greater that new size");
-            }
-            else
-            {
-                if (size < def_size)
-                {
-                    // and new size = 5
-                    int diff = def_size - size;
-                    for (int i=0; i < diff; i++);
-                    {
-                        queue.RemoveAt(queue.Count - 1);
-                    }
-                    def_size = size;
-                }
-                else if (size == def_size)
-                {
-                    Console.WriteLine("Current size equals new size");
-                }
-                else 
-                {
-                    int diff = size - def_size;
-                    for (int i=0; i < diff; i++)
-                    {
-                        queue.Add(0);
-                    }
-                    def_size = size;
-                }
-            }
         }
 
         // is full
@@ -125,18 +87,53 @@ namespace queues
             return false;
         }
 
+        // resize
+        public void resize(int size)
+        {
+            if (size < cur_size)
+            {
+                Console.WriteLine("Current stack size is greater than new size");
+            }
+            else
+            {
+                if (size < def_size)
+                {
+                    // and new size = 5
+                    int diff = def_size - size;
+                    for (int i=0; i < diff; i++);
+                    {
+                        stack.RemoveAt(stack.Count - 1);
+                    }
+                    def_size = size;
+                }
+                else if (size == def_size)
+                {
+                    Console.WriteLine("Current size equals new size");
+                }
+                else 
+                {
+                    int diff = size - def_size;
+                    for (int i=0; i < diff; i++)
+                    {
+                        stack.Add(0);
+                    }
+                    def_size = size;
+                }
+            }
+        }
+
         // traverse
         public void traverse()
         {
             if (cur_size == 0)
             {
-                Console.WriteLine("Current queue is empty!");
+                Console.WriteLine("Current stack is empty!");
             }
             else
             {
-                for (int i=0; i < cur_size; i++)
+                for (int i=1; i <= cur_size; i++)
                 {
-                    Console.WriteLine(queue[i]);
+                    Console.WriteLine(stack[cur_size - i]);
                 }
             }
         }
