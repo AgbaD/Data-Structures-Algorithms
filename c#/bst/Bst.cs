@@ -81,6 +81,123 @@ namespace bst
             }
         }
 
+        // get root
+        public int getRoot()
+        {
+            return root.data;
+        }
+
+        // delete
+        public void delete(int value)
+        {
+            if (root == null)
+            {
+                Console.WriteLine("Binary Search Tree is empty!");
+            }
+            else if (root.data == value)
+            {
+                if (root.rightChild == null)
+                {
+                    if (root.leftChild == null)
+                    {
+                        root = null;
+                    }
+                    else
+                    {
+                        root = root.leftChild;
+                    }
+                }
+                else {
+                    if (root.leftChild == null)
+                    {
+                        root = root.rightChild;
+                    }
+                    else
+                    {
+                        Node temp = root.rightChild;
+                        root = root.leftChild;
+                        insertNode(root, temp);
+                    }
+                }
+            }
+            else
+            {
+                deleteNode(root, value);
+            }
+        }
+
+        public void deleteNode(Node node, int value)
+        {
+            if (value < node.data)
+            {
+                if (node.leftChild.data == value)
+                {
+                    if (node.leftChild.rightChild == null)
+                    {
+                        if (node.leftChild.leftChild == null)
+                        {
+                            node.leftChild = null;
+                        }
+                        else
+                        {
+                            node.leftChild = node.leftChild.leftChild;
+                        }
+                    }
+                    else {
+                        if (node.leftChild.leftChild == null)
+                        {
+                            node.leftChild = node.leftChild.rightChild;
+                        }
+                        else
+                        {
+                            Node temp = node.leftChild.rightChild;
+                            node.leftChild = node.leftChild.leftChild;
+                            insertNode(node.leftChild, temp);
+                        }
+                    }
+                }
+                else
+                {
+                    deleteNode(node.leftChild, value);
+                }
+            }
+            else
+            {
+                if (node.rightChild.data == value)
+                {
+                    if (node.rightChild.rightChild == null)
+                    {
+                        if (node.rightChild.leftChild == null)
+                        {
+                            node.rightChild = null;
+                        }
+                        else
+                        {
+                            node.rightChild = node.rightChild.leftChild;
+                        }
+                    }
+                    else
+                    {
+                        if (node.rightChild.leftChild == null)
+                        {
+                            node.rightChild = node.rightChild.rightChild;
+
+                        }
+                        else
+                        {
+                            Node temp = node.rightChild.rightChild;
+                            node.rightChild = node.rightChild.leftChild;
+                            insertNode(node.rightChild, temp);
+                        }
+                    }
+                }
+                else
+                {
+                    deleteNode(node.rightChild, value);
+                }
+            }
+        }
+
         // get minimum
         public int getMin()
         {
@@ -132,6 +249,7 @@ namespace bst
                 return node.data;
             }
         }
+
         // traverse
         public void traverse()
         {

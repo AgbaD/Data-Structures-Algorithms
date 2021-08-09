@@ -32,6 +32,13 @@ namespace bst
             Console.WriteLine("");
 
             bst.traverse();
+            Console.WriteLine("");
+
+            bst.delete(3);
+            Console.WriteLine(bst.getRoot());
+            Console.WriteLine("");
+            bst.traverse();
+            Console.WriteLine("");
         }
     }
 }
