@@ -28,7 +28,7 @@ namespace heaps
             else
             {
                 pointer = root;
-                // convert count tot binary
+                // convert count to binary
                 string bitcount = Convert.ToString(count + 1, 2);
                 int i;
                 for (i=1; i < bitcount.Length; i++)
