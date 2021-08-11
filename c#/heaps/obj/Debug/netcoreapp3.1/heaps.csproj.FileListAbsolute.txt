@@ -1,0 +1,13 @@
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\heaps\obj\Debug\netcoreapp3.1\heaps.csprojAssemblyReference.cache
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\heaps\obj\Debug\netcoreapp3.1\heaps.AssemblyInfoInputs.cache
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\heaps\obj\Debug\netcoreapp3.1\heaps.AssemblyInfo.cs
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\heaps\obj\Debug\netcoreapp3.1\heaps.csproj.CoreCompileInputs.cache
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\heaps\bin\Debug\netcoreapp3.1\heaps.exe
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\heaps\bin\Debug\netcoreapp3.1\heaps.deps.json
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\heaps\bin\Debug\netcoreapp3.1\heaps.runtimeconfig.json
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\heaps\bin\Debug\netcoreapp3.1\heaps.runtimeconfig.dev.json
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\heaps\bin\Debug\netcoreapp3.1\heaps.dll
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\heaps\bin\Debug\netcoreapp3.1\heaps.pdb
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\heaps\obj\Debug\netcoreapp3.1\heaps.dll
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\heaps\obj\Debug\netcoreapp3.1\heaps.pdb
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\heaps\obj\Debug\netcoreapp3.1\heaps.genruntimeconfig.cache
