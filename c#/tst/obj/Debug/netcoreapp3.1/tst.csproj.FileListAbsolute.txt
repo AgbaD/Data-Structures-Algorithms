@@ -1,0 +1,13 @@
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\tst\obj\Debug\netcoreapp3.1\tst.csprojAssemblyReference.cache
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\tst\obj\Debug\netcoreapp3.1\tst.AssemblyInfoInputs.cache
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\tst\obj\Debug\netcoreapp3.1\tst.AssemblyInfo.cs
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\tst\obj\Debug\netcoreapp3.1\tst.csproj.CoreCompileInputs.cache
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\tst\bin\Debug\netcoreapp3.1\tst.exe
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\tst\bin\Debug\netcoreapp3.1\tst.deps.json
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\tst\bin\Debug\netcoreapp3.1\tst.runtimeconfig.json
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\tst\bin\Debug\netcoreapp3.1\tst.runtimeconfig.dev.json
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\tst\bin\Debug\netcoreapp3.1\tst.dll
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\tst\bin\Debug\netcoreapp3.1\tst.pdb
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\tst\obj\Debug\netcoreapp3.1\tst.dll
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\tst\obj\Debug\netcoreapp3.1\tst.pdb
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\tst\obj\Debug\netcoreapp3.1\tst.genruntimeconfig.cache
