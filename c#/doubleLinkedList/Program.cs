@@ -6,7 +6,7 @@ namespace doubleLinkedList
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("We are Inside!");
+            Console.WriteLine("Double Linked List!");
             DLinkedList list = new DLinkedList();
 
             list.prepend(8);

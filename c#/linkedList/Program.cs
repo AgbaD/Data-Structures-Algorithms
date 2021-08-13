@@ -7,7 +7,7 @@ namespace linkedList
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("We are Inside!");
+            Console.WriteLine("Linked Lists");
             LinkedList lst = new LinkedList();
 
             // lst.traverse();

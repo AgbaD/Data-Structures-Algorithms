@@ -148,7 +148,7 @@ namespace heaps
                             int t = pointer.data;
                             pointer.data = pointer.left.data;
                             pointer.left.data = t;
-                            pointer = pointer.left
+                            pointer = pointer.left;
                         }
                         else
                         {
@@ -163,7 +163,7 @@ namespace heaps
                         }
                         else
                         {
-                            compare = pointer.right
+                            compare = pointer.right;
                         }
 
                         if (compare.data < pointer.data)
