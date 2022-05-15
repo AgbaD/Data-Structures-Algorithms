@@ -1,0 +1,13 @@
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\queues\obj\Debug\netcoreapp3.1\queues.csprojAssemblyReference.cache
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\queues\obj\Debug\netcoreapp3.1\queues.AssemblyInfoInputs.cache
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\queues\obj\Debug\netcoreapp3.1\queues.AssemblyInfo.cs
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\queues\obj\Debug\netcoreapp3.1\queues.csproj.CoreCompileInputs.cache
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\queues\bin\Debug\netcoreapp3.1\queues.exe
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\queues\bin\Debug\netcoreapp3.1\queues.deps.json
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\queues\bin\Debug\netcoreapp3.1\queues.runtimeconfig.json
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\queues\bin\Debug\netcoreapp3.1\queues.runtimeconfig.dev.json
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\queues\bin\Debug\netcoreapp3.1\queues.dll
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\queues\bin\Debug\netcoreapp3.1\queues.pdb
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\queues\obj\Debug\netcoreapp3.1\queues.dll
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\queues\obj\Debug\netcoreapp3.1\queues.pdb
+C:\Users\Agbabiaka Damilare\Desktop\code_playground\DataStr&Algo\c#\queues\obj\Debug\netcoreapp3.1\queues.genruntimeconfig.cache
