@@ -3,7 +3,6 @@
 
 import math
 
-# breath first search
 def solution(src, dest):
     """
         Write a function called solution(src, dest) which takes in two parameters: 
@@ -27,6 +26,7 @@ def solution(src, dest):
 
         So solution(19, 36) will be 1, and solution(0, 1) will be 3.
     """
+    # breath first search
     q, visited = [(src, 0)], set()
     while q:
         n = q.pop(0)
