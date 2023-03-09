@@ -34,6 +34,7 @@ def staircase(h, l, memo):
 
 
 # working solution
+# returns correct answer but fails test cases
 def wSolution(n):
     # dynamic programming
     if not n or n < 3: 
