@@ -45,3 +45,12 @@ def wSolution(n):
             base[j] += base[j-i]  
     return base[n]
 
+
+def fib(n):
+    a, b = 1, 1
+    for i in range(n):
+        a, b = b, a+b
+    print(b)
+
+if __name__ == "__main__":
+    fib(200)
